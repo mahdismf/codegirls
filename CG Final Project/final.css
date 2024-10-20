@@ -1,0 +1,736 @@
+:root {
+  --black: black;
+  --lilac: rgb(250, 242, 246);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.container, header, .header-section{
+    width: 100%;
+
+}
+
+header{
+    background-color: var(--lilac);
+    position:sticky;
+    top:0;
+    z-index: 100;
+    border-bottom: 1px solid rgb(148, 148, 148);
+}
+.search-icon, .wishlist-cart{
+    width: 20%;
+}
+.logo-img{
+    width: 60%;
+}
+.header-section{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgb(205, 204, 204);
+}
+.logo-img img{
+    width: 10%;
+    margin-left: 46em;
+}
+ .fa-magnifying-glass{
+    margin-left: 4em;
+}
+.fa-cart-shopping{
+    margin-left: 2em;
+}
+.wishlist-cart{
+    display: flex;
+}
+.wishlist{
+    margin-left: 12em;
+}
+.navmenu{
+    display:flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+.navitems a{
+    text-decoration: none;
+    color: var(--black);
+    display: block;
+    padding: 10px 20px;
+}
+.navitems{
+    margin: 0px 8px;
+}       
+.navitems a:hover{
+    background-color:rgb(201, 162, 196);
+    border-bottom: 1px solid var(--black);
+}
+.background-img{
+    content: '';
+    background-image: url("images/homepage-logo.webp");
+    background-repeat: no-repeat;
+    background-color: bisque;
+    background-size: cover;
+    opacity: 0.8;
+}
+.spacer-before {
+    height:28.125em;
+}
+
+.spacer-after {
+    height:25em;
+}
+ main{
+  background-color: white;
+}
+.fa-x{
+  margin-bottom: 11em;
+}
+.background-img .shopnow-btn, .all-about-serums-text .shopnow-btn, .sub-footer4 .shopnow-btn{
+    border: none;
+    border-radius: 0.2em;
+    box-shadow: 0.25em 0.25em 0.062em rgb(175, 104, 156);
+    color: white;
+    padding: 0.937em 2.18em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.5s ease;   
+  }
+  .background-img .shopnow-btn, .sub-footer4 .shopnow-btn{
+    padding: 0.937em 2.18em;
+    background-color: rgb(195, 151, 166);
+  }
+  .background-img .shopnow-btn{
+    margin-left: 19em;     
+  }
+  .background-img .shopnow-btn:hover, .sub-footer4 .shopnow-btn:hover{
+    background-color: var(--black);
+  }
+  .sub-footer4 .shopnow-btn{
+    margin-top: 3em;
+    margin-left: 8em;
+  }
+  
+.slider {
+  width: 96%; /* Adjust the width of the slider */
+  margin: 3em auto; /* Center the slider */
+  transition: transform 0.5s linear;
+}
+
+.slider div {
+  text-align: center; /* Center align images */
+ 
+}
+
+.slider img {
+  max-width: 10em; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+
+  width: 6.25em;
+  height: 6.25em;
+}
+
+
+    /* .slider{
+    display: flex;
+    justify-content: space-around;
+    margin: 3em;
+
+  }*/
+
+  /* .bright-skin-days p{
+    margin-bottom: 1.5em;
+  } */
+  
+
+/*# sourceMappingURL=slick-theme.min.css.map */
+  .your-skin-craves {
+    text-align: center;
+    padding: 3.125em 0;
+    /* background-color: whitesmoke; */
+    font-family:  serif;
+}
+.your-skin-craves  h1 {
+    font-size: 2.25em;
+    margin-bottom: 0.625;
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+.your-skin-craves  p {
+    font-size: 1.125em;
+    color: #555;
+    font-family: Harmonia Sans, sans-serif;
+    font-size: medium;
+}
+
+
+.product-list {
+    width: 75%; 
+ 
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin: auto; 
+    margin-top: 4em;
+    gap: 1.25em;
+  }
+  
+  .product {
+    width: 23%; 
+   
+    margin-bottom: 3em; 
+    position: relative;
+  }
+  
+  .quick-shop-button{
+    display: none;
+    position: absolute; 
+    bottom: 5.5em; 
+    left: 24%;
+    padding: 0.5em 1.62em;
+    background-color: white;
+    border: none;
+    border-radius: 0.312em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  .quick-shop-button:hover {
+    background-color: rgb(189, 123, 172); 
+  }
+  .product:hover .quick-shop-button {
+    display: block;
+  }
+  .product h3 {
+    font-size: 0.8em; 
+    font-family: sans-serif;
+    line-height: 1em;
+    font-weight: bold;
+    margin-top: 2em;
+  }
+  
+  .product p {
+    font-size: 0.8em; 
+    font-family: sans-serif; 
+    font-weight: bold;
+  }
+  .product:hover img {
+    transform: scale(1.1); 
+  }
+  img {
+    transition: transform 0.3s ease;
+  }
+  .checkout-popup {
+    display: none; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50em;
+    height: 70vh;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.5; */
+    margin-left: 25em;
+    margin-top: 8em;
+    
+  }
+  
+  .checkout-details {
+    color: white;
+  }
+  .popup-image-container {
+    margin-right: 4em;
+    margin-top: 1.5em;
+  }
+  .popup-image-container img{
+    width: 26em;
+    height: 31em;
+  }
+
+  
+  .popup-content {
+    display: flex; 
+    align-items: center; 
+    color: white;
+  }
+
+  
+  .popup-text {
+    position: relative;
+    right: 1.5em;
+    color: var(--black);
+    width: 20em;
+   
+  }
+
+  
+  .popup-text h3 {
+    font-size: larger;
+    line-height: 2em;
+    color: var(--black);
+  }
+  .popup-text .productprice {
+    font-size: large;
+    line-height: 3em;
+    font-weight: bolder;
+  }
+  .popup-text  .product-details {
+    font-weight: lighter;
+    color: gray;
+    font-size: 0.9em;
+    line-height: 1.6em
+  }
+  .popup-text :nth-child(6) {
+    font-size: 0.7em;
+    line-height: 1.3em;
+  }
+  .add-to-cart-button {
+    padding: 8px 26px;
+    background-color: var(--black);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.4s ease;
+    box-shadow: 0 4px 0px rgb(182, 121, 167);
+    margin: 3em;
+    cursor: pointer;
+  }
+  .add-to-cart-button:hover, #continue-shopping:hover, #checkout-button:hover {
+    background-color: rgb(182, 121, 167);
+    box-shadow: none;
+  }
+ 
+  #closebutton {
+    position: absolute; 
+    bottom: 23em;
+    left: 25.2em;
+    cursor: pointer; 
+    font-size: 0.8em; 
+    color: var(--black);
+    z-index: 1000;
+    background: none; 
+    border: none; 
+
+ 
+  }
+ 
+  .confirmation-modal {
+    display: none; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50em;
+    height: 70vh;
+    background-color: white;
+  
+    opacity: 1;
+    margin-left: 25em;
+    margin-top: 6em;
+  }
+  .modal-content {
+    position: relative; 
+    left: 2em;
+    margin-top: 1em;
+    color: var(--black);
+    width: 20em;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 2em;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+  }
+.modal-content h2{
+  text-align: center;
+  margin-bottom: 1em;
+} 
+  
+  #continue-shopping {
+    background-color: blue; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px;
+  }
+
+#closeModal{
+ margin-left: 50em;
+}
+#myForm button{
+background-color: var(--black);
+border: 0px;
+color: white;
+width: 13em;
+height: 3.2em;
+border-radius: 0.5em
+}
+#myForm button :hover{
+  background-color:  rgb(182, 121, 167);
+}
+.All-about-serums{
+    display: flex;
+}
+.all-about-serums-text{
+    background-color: #f5f0e3;
+    width: 50vw;
+}
+.all-about-serums-img img, .Serendipity-text, .Serendipity-img{
+    width: 50vw;
+    height: 100%;
+}
+.all-about-serums-text h2, .all-about-serums-text p, .all-about-serums-text button{
+ text-align: center;
+ line-height: 2em;
+}
+.all-about-serums-text h2{
+    margin-top: 1.5em;
+    font-family: serif;
+    line-height: 3em;
+    font-weight: lighter;
+    font-size: 3em;
+}
+.all-about-serums-text .shopnow-btn{
+    background-color: var(--black);
+    margin-top: 1.5em;
+    width: 9.5em;
+    height: 3em;
+    padding: 0 1em;
+}
+.all-about-serums-text .shopnow-btn{
+    margin-left: 20em; 
+}
+
+.all-about-serums-text .shopnow-btn:hover{
+    background-color: rgb(189, 123, 172);   
+}
+.i-love-serendipty, .Serendipity-img{
+    display: flex;
+    background-color: #f5f0e3;
+}
+.Serendipity-img img{
+    height: 24em;
+}
+.Serendipity-text{
+    margin: 6.5em 0em;
+    margin-left: 12em ;
+}
+.error-section{
+  width: 100%;
+  margin-top: 8em;
+  text-align: center;
+}
+.error-occured{
+  font-size: 3em;
+}
+.error-404{
+  font-size: 6em;
+}
+.Serendipity-img{
+margin-right: 13em;
+}
+.serendipity-img1{
+    position: relative;
+    left: 3em;
+    top: 3.5em;
+    z-index: 1;
+}
+.i-love-serendipty{
+    padding: 5em 0em;
+}
+.Serendipity-text h2, .Serendipity-text p{
+    line-height: 2em;
+    font-size: medium;
+    font-family: serif;
+}
+.Serendipity-text h2{
+    font-size: 3em;
+    font-weight: lighter
+}
+footer{
+    background-color: var(--lilac);
+    display: flex;
+    padding: 3.75em 2.45em;
+    border-top: 1px solid rgb(148, 148, 148);
+    border-bottom:1px solid rgb(148, 148, 148);
+    margin-top: 3.5em;
+}
+.nexcent-footer{
+    width: 8.56em;
+}
+.footer-logo{
+    line-height: 4.06em;
+}
+.footer-para{
+    line-height: 2.5em;
+    font-size: 0.75em;
+}
+.footer-icon{
+    margin-top: 2.18em;
+}
+.sub-footer1 img{
+    width: 50%;
+    margin-bottom: 1.5em;
+}
+.sub-footer2{
+    margin-left: 9em;
+}
+.footer-heading{
+    font-size: 1.3em;
+    line-height: 4.5em;
+}
+.company-listitem {
+    margin-top: 1.25em;
+}
+.company-listitem li{
+    list-style: none;
+    font-size: 0.812em;
+    line-height: 1.93em;
+}
+.sub-footer3, .sub-footer4{
+    margin-left: 15em;
+    margin-top: 0.125em;
+}
+.sub-footer4 p{
+    margin-top: 1.1em;
+    margin-bottom: 2em;
+}
+.email{
+    display: flex;
+    background-color: var(--lilac);
+    color: var(--black);
+    width: 23em;
+    height: 3em;
+    border-radius: 0.437em;
+    margin-top: 1.5em;
+    border: 1px solid var(--black);
+}
+.your-email{
+    margin: 0.9em;
+}
+
+.video-background {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; 
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+  }
+  .our-mission{
+    display: flex;
+    margin-top: 5em;
+  }
+.about-us-video video{
+    width: 100%;
+}
+.OM-text-box{
+    margin-top:11em;
+    margin-left: 8em;
+    font-family: serif;
+}
+.OM-img-box{
+    margin-left: 10em;
+}
+.OM-img-box img{
+    width: 38em;
+}
+.OM-text-box h2{
+    font-size: 2.5em;
+    line-height: 3em;
+}
+.OM-text-box p{
+    line-height: 1.5em;
+}
+.accordion {
+  max-width: 50em;
+  margin: auto;
+  margin-top: 3em;
+  font-family: serif;
+
+}
+.accordion :nth-child(1) {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.accordion-header {
+  background-color: white;
+  padding: 1em;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+  border-top: 1px solid var(--black);
+  color: rgb(95, 90, 90);
+  /* border-radius: 7px; */
+  border-bottom: 1px solid var(--black);
+  font-size: 1.4em;
+}
+
+.accordion-header:hover {
+  background-color: plum;
+}
+
+.accordion-content {
+  display: none; /* Hidden by default */
+  text-align: center;
+  /* border-top: none; */
+  background-color: white;
+  transition: background-color 0.3s;
+
+  
+}
+.accordion-content p {
+  color: rgb(70, 67, 67);
+ /* Dark text for content */
+  padding: 5px 0; /* Padding for content */
+  font-size: 1em;
+  margin-top: 1em
+
+}
+
+#continue-shopping {
+  bottom: 5.5em; /* Position above the bottom */
+  left: 24%;
+  /* padding: 8px 26px; */
+  border-radius: 5px;
+  font-weight: bold;
+  width: 17em;
+  height: 2.5em;
+  background-color: var(--black); /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-right: 1em;
+  margin-top: 2em;
+
+}
+#checkout-button {
+  bottom: 5.5em; /* Position above the bottom */
+  left: 24%;
+  /* padding: 8px 26px; */
+  border-radius: 5px;
+  font-weight: bold;
+  width: 17em;
+  height: 2.5em;
+  background-color: var(--black); /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-right: 1em;
+  margin-top: 2em;
+}
+
+
+
+.confirmation-modal {
+  display: none; /* Ensure it is hidden by default */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50em;
+  height: 70vh;
+  background-color: plum;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  margin-left: 25em;
+  margin-top: 6em;
+}
+
+/* Checkout Modal */
+.checkout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+input {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input.error {
+  border-color: red;
+}
+
+input.valid {
+  border-color: green;
+}
+
+#message {
+  color: green;
+  font-weight: bold;
+}
+form {
+  /* White background for the form */
+  padding: 20px;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  */
+}
+.subscribe-input{
+  width: 81%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px;
+  font-size: 16px;
+}
+.subscribe-btn{
+  background-color: var(--black); /* Blue button */
+  color: white; /* White text */
+  border: none;
+  padding: 10px;
+border-radius: 0.2em;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.subscribe-btn:hover{
+  background-color: plum;
+}
+.message {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serendipity by Rooj</title>
+    <script src="https://kit.fontawesome.com/bf53964ad5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="slickplugin/slick.css">
+    <link rel="stylesheet" href="slickplugin/slick-theme.min.css">
+
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-section">
+                <!-- <div class="search-icon">     
+                    <i class="fa-solid fa-magnifying-glass"></i>         
+                </div> -->
+                <div class="logo-img">
+                    <img src="images/serendipitylogo.avif" alt="serendipitylogo">
+                </div>
+                <!-- <div class="wishlist-cart"> 
+                    <div class="wishlist">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> 
+                    <div class="cart">   
+                        <i class="fa-solid fa-cart-shopping"></i> 
+                    </div>         
+                </div> -->
+            </div>
+            <nav>
+                <ul class="navmenu">
+                    <li class="navitems">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li class="navitems">
+                        <a href="AboutUs.html">About Us</a>
+                    </li>
+                    <!-- <li class="navitems">
+                        <a href="contactus.html">Contact Us</a>
+                    </li> -->
+                    <li class="navitems">
+                        <a href="FAQs.html">FAQs</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="background-img">
+            <div class="spacer-before"></div>
+            <button class="main shopnow-btn" onclick="location.href='#productlist'">SHOP NOW</button>
+
+            <div class="spacer-after"></div>
+        </section>
+        <main>
+            <section class="slider">
+
+                <div class="bright-skin-days">
+                    <img src="images/bright-skin-days-animation.jpg" alt="bright-skin-days-animation">
+                </div>
+                <div class="moisture-surge">
+                    <img src="images/moisture-surge-animation.png" alt="moisture-surge-animation">
+                </div> 
+                <div class="what-a-melon">
+                    <img src="images/what-a-melon-animation.png" alt="what-a-melon-animation">
+                </div>
+                <div class="dirt-away">
+                    <img src="images/dirt-away-animation.jpg" alt="dirt-away-animation">
+                </div>
+                <div class="cherry-in-top">
+                    <img src="images/cherry-in-top-animation.png" alt="cherry-in-top-animation">
+                </div> 
+                <div class="tea-tree-toner">
+                    <img src="images/tea-tree-toner-animation.png" alt="tea-tree-toner-animation">
+                </div> 
+                <div class="skin-douse">
+                    <img src="images/skin-douse-animation.avif" alt="skin-douse-animation">
+                </div> 
+                <div class="turmeric-toner">
+                    <img src="images/turmeric-toner-animation.png" alt="turmeric-toner-animation">
+                </div>
+                <div class="peechy-keen">
+                    <img src="images/peechy-keen-animation.png" alt="peechy-keen-animation">
+                </div> 
+            </section>
+            <section class="your-skin-craves">
+                <h1>Your Skin Craves</h1>
+                <p>Designed to meet all types of skincare needs and concerns</p>
+                <div id="productlist" class=" main product-list"></div>
+                <div class="checkout-popup" id="checkoutpop">
+                    <div class="popup-content" id="popupcontent">
+                      <div id="popupimg" class="popup-image"></div>
+                    </div>
+                  </div>
+
+                 </section>
+
+                 <div
+                 id="confirmationmodal"
+                 class="confirmation-modal"
+                 style="display: none"
+               >
+                 <div class="modal-content">
+                   <p id="confirmationMessage"></p>
+                   <p>Do you want to continue shopping or checkout?</p>
+                   <button id="continue-shopping">Continue Shopping</button>
+                   <button id="checkout-button">Checkout</button>
+                 </div>
+               </div>
+
+
+
+
+
+
+            <section class="All-about-serums">
+                <div class="all-about-serums-img">
+                    <img src="images/SIDE_IMAGE.webp" alt="SIDE_IMAGE">
+                </div>
+                <div class="all-about-serums-text">
+                    <h2>All About Serums</h2>
+                    <p>From improved collagen production to hydrating the skin and reducing fine <br>
+                        lines and wrinkles. These serums contain retinol, Alpha Arbutin and Glycolic <br>
+                        Acid. Perfect to treat dark spots, hyperpigmentation, under Eye dark circles & <br>
+                        Puffiness</p>
+             <button class="main shopnow-btn" onclick="location.href='#productlist'">SHOP NOW</button>
+
+                </div>
+                <div id="checkoutModal" class="checkout-modal" style="display: none;">
+                    <div class="modal-content">
+                        <span id="closeModal" style="cursor: pointer;">&times;</span>
+                        <h2>Checkout</h2>
+                        <form id="myForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="Name" required />
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="Email" required />
+                            <label for="phone">Phone:</label>
+                            <input type="number" id="phone" name="Phone" required />
+                            <label for="Residential Address">Residential Address</label>
+                            <input type="text" id="address" name="Residential Address" required />
+                            <button type="submit">Submit</button>
+                        </form>
+                        <div id="message"></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- <section class="product-animation-slider"></section> -->
+            <section class="i-love-serendipty">
+                <div class="Serendipity-text">
+                    <h2>I love Serendipity</h2>
+                    <p>I've noticed improvements in my skin's texture and tone that I never<br>
+                    thought possible. From the moment I tried their products, I was hooked.<br></p>
+                </div>
+                <div class="Serendipity-img">
+                    <img class="serendipity-img1"  src="images/serendipity-img1.webp" alt="serendipity-img1">
+                    <img src="images/serendipity-img2.webp" alt="serendipity-img2">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="sub-footer1">
+                <img src="images/serendipitylogo.avif" alt="serendipitylogo">
+                <p class="footer-para">Serendipity by Rooj believes to empower <br>
+                    individuals to embrace their natural beauty<br> and find joy in their skincare routines.</p>
+            </div>
+            <div class="sub-footer2">
+                <h4 class="footer-heading">QUICK LINKS</h4>
+                <ul class="company-listitem">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="sub-footer3">
+                <h4 class="footer-heading">USER INFO</h4>
+                <ul class="company-listitem">
+                    <li><a href="error.html">Privacy Policy</a></li>
+                    <li><a href="error.html">Refund Policy</a></li>
+                    <li><a href="error.html">Shipping Policy</a></li>
+                    <li><a href="error.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="sub-footer4">
+                <h3 class="footer-heading">NEWSLETTER</h3>
+                <p>Get a 10% discount on your first order.</p>
+
+                <form id="subscribeForm">
+                    <label for="email">Email:</label>
+                    <input class="subscribe-input" type="email" id="email" required>
+                    <button class="subscribe-btn" type="submit">Subscribe</button>
+                </form>
+            
+                <div id="message" class="message"></div>
+            
+            </div>
+
+        </footer>
+    </div>
+   
+   <!-- <script src="jquery-3.7.1.js"></script> -->
+   <!--jquery cdn -->
+
+   <script src="jquerycdn/jquery-3.7.1.js"></script>
+   <script src="jquerycdn/jquery.validate.min.js"></script>
+   <script src="jquerycdn/formValidation.min.js"></script>
+   <script src="slickplugin/slick.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="faq.js"></script>
+   <script src="js/slider.js"></script>
+</body>
+</html>
+
+
+
